@@ -1,0 +1,16 @@
+PODS:
+  - ZSLRecorderButton (0.1.0)
+
+DEPENDENCIES:
+  - ZSLRecorderButton (from `../`)
+
+EXTERNAL SOURCES:
+  ZSLRecorderButton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZSLRecorderButton: 0b480ae4c04a380b756c5252f0b4d8b04f85d21c
+
+PODFILE CHECKSUM: 792a86e644974a32057fade2a26ddc752831c15a
+
+COCOAPODS: 1.0.1

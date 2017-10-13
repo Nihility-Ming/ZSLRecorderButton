@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment version="2336" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="apM-k1-7Ob" customClass="ZSLRecorderView">
+            <rect key="frame" x="0.0" y="0.0" width="277" height="280"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fae-br-b24" userLabel="Background View" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="277" height="280"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qV3-d1-u7V" userLabel="Box View" customClass="UIControl">
+                            <rect key="frame" x="21" y="47" width="235" height="185"/>
+                            <subviews>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zsl_recode" highlightedImage="zsl_canclerecode.png" translatesAutoresizingMaskIntoConstraints="NO" id="SjF-BE-bYG">
+                                    <rect key="frame" x="77" y="34" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="CvV-fp-5tZ"/>
+                                        <constraint firstAttribute="height" constant="80" id="U4L-LZ-Mw9"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请稍后..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQ0-QL-XQz" userLabel="Tips Label">
+                                    <rect key="frame" x="23" y="131" width="189" height="46"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="46" id="bjB-sf-p2U"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="yQ0-QL-XQz" firstAttribute="top" secondItem="SjF-BE-bYG" secondAttribute="bottom" constant="17" id="JC9-MY-hUK"/>
+                                <constraint firstItem="yQ0-QL-XQz" firstAttribute="centerX" secondItem="SjF-BE-bYG" secondAttribute="centerX" id="KRE-3K-hyk"/>
+                                <constraint firstItem="SjF-BE-bYG" firstAttribute="top" secondItem="qV3-d1-u7V" secondAttribute="top" constant="34" id="a8F-yA-KvI"/>
+                                <constraint firstAttribute="width" constant="235" id="dcS-HB-gpx"/>
+                                <constraint firstItem="yQ0-QL-XQz" firstAttribute="leading" secondItem="qV3-d1-u7V" secondAttribute="leading" constant="23" id="gfL-o7-CN5"/>
+                                <constraint firstAttribute="trailing" secondItem="yQ0-QL-XQz" secondAttribute="trailing" constant="23" id="j9e-KK-yMd"/>
+                                <constraint firstItem="SjF-BE-bYG" firstAttribute="centerX" secondItem="qV3-d1-u7V" secondAttribute="centerX" id="uXO-SX-Iho"/>
+                                <constraint firstAttribute="height" constant="185" id="yBm-h7-Tjd"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.90487607758620692" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="qV3-d1-u7V" firstAttribute="centerY" secondItem="fae-br-b24" secondAttribute="centerY" id="6AH-tG-SZX"/>
+                        <constraint firstItem="qV3-d1-u7V" firstAttribute="centerX" secondItem="fae-br-b24" secondAttribute="centerX" id="xUl-A6-G0T"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fae-br-b24" secondAttribute="trailing" id="Ltz-JL-CCV"/>
+                <constraint firstItem="fae-br-b24" firstAttribute="top" secondItem="apM-k1-7Ob" secondAttribute="top" id="Xoc-GQ-SCD"/>
+                <constraint firstAttribute="bottom" secondItem="fae-br-b24" secondAttribute="bottom" id="fFA-O8-aOb"/>
+                <constraint firstItem="fae-br-b24" firstAttribute="leading" secondItem="apM-k1-7Ob" secondAttribute="leading" id="onc-3p-0pc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="fae-br-b24" id="2Me-YL-2yn"/>
+                <outlet property="boxView" destination="qV3-d1-u7V" id="ks2-CO-iaN"/>
+                <outlet property="imageView" destination="SjF-BE-bYG" id="4TR-fT-Rml"/>
+                <outlet property="tipsLabel" destination="yQ0-QL-XQz" id="06L-EH-19u"/>
+            </connections>
+            <point key="canvasLocation" x="64.5" y="190"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="zsl_canclerecode.png" width="120" height="120"/>
+        <image name="zsl_recode" width="120" height="120"/>
+    </resources>
+</document>

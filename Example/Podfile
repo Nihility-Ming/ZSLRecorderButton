@@ -1,0 +1,10 @@
+
+target 'ZSLRecorderButton_Example' do
+  pod 'ZSLRecorderButton', :path => '../'
+
+  target 'ZSLRecorderButton_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
