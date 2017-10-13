@@ -5,7 +5,7 @@
 
 ---
 
-### 集成
+## 集成
 
 1.在Podifle里面添加pod库依赖：
 ```
@@ -20,7 +20,7 @@ pod 'ZSLRecorderButton', :git=>'https://github.com/Nihility-Ming/ZSLRecorderButt
 <string>是否允许此App使用你的麦克风？</string>
 ```
 
-### 演示源码
+## 演示源码
 ```Objective-C
 #import "ZSLViewController.h"
 #import <ZSLRecorderButton.h>
