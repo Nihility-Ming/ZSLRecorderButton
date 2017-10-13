@@ -1,6 +1,10 @@
 # ZSLRecorderButton
 一个常见的长按按钮录音功能库
 
+![ZSLRecorderButton](s/IMG_2007.PNG)
+
+![ZSLRecorderButton](s/IMG_2009.PNG)
+
 ### 集成
 
 1.在Podifle里面添加pod库依赖：
