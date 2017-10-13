@@ -14,7 +14,6 @@
 
 // ZSLRecorderButton是UIButton的子类，直接拖SB。也可以
 @property (weak, nonatomic) IBOutlet ZSLRecorderButton *recorderButton;
-@property (strong, nonatomic) ZSLRecordFileModel *fileModel;
 
 @end
 
