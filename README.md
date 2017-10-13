@@ -3,7 +3,7 @@
 
 ![ZSLRecorderButton](s/IMG_2007.PNG)
 
-![ZSLRecorderButton](s/IMG_2009.PNG)
+---
 
 ### 集成
 
