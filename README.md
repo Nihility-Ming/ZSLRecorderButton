@@ -115,7 +115,3 @@ pod 'ZSLRecorderButton', :git=>'https://github.com/Nihility-Ming/ZSLRecorderButt
 
 `ZSLRecorderButton` is available under the MIT license.
 
-## Contact
-
-If you have any questions or suggestions, contact me `QQ724849296` or call `+8615918550637`, please.
-
